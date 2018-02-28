@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Tables 2</h1>
+    </div>
+
+    <div class="col-xs-12">
+      <table class="table table-striped">
+        <thead>
+          <th>Date</th>
+          <th>Recipient</th>
+          <th>Carrier</th>
+          <th>Shipping</th>
+          <th>Tracking</th>
+          <th>Status</th>
+          <th>Amount</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="row in tables.rowdata">
+            <td>row.date</td>
+            <td>row.recipient</td>
+            <td>row.carrier</td>
+            <td>row.shipping</td>
+            <td>row.tracking</td>
+            <td>row.status</td>
+            <td>row.amount</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Hotel Tax Calculator</h1>
+      <p>Input daily hotel rates to get the taxes.</p>
+    </div>
+  </div>
+
+  <!-- row to make the 2 columns -->
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-9">
+
+      <!-- the actual form -->
+      <!-- add class "form" to get proper space below form -->
+      <form class="form">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group" ng-class="{ 'has-error' : form.showErrors1 }">
+              <label>Hotel Rate</label>
+              <input type="text" name="address1" class="form-control" ng-model="home.hotel.rate" required>
+              <p class="help-block error-block">Enter an hotel rate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>State Tax</label>
+              <h2 class="form-control-static" style="margin-top: 0">{{home.hotel.stateTax || "&nbsp;"}}</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Sales Tax</label>
+              <h2 class="form-control-static" style="margin-top: 0">{{home.hotel.salesTax || "&nbsp;"}}</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Total</label>
+              <h1 class="form-control-static" style="margin-top: 0">{{home.hotel.total || "&nbsp;"}}</h1>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+
+    </div>
+
+    <!-- right column -->
+    <div class="col-md-3">
+
+    </div>
+  </div>
+
+
+</div>
+</div>

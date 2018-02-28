@@ -1,0 +1,17 @@
+<div class="modal-header">
+  <button type="button" class="close" ng-click="modal.close()">
+    <span aria-hidden="true"></span><span class="sr-only">Close</span>
+  </button>
+  <h3 class="modal-title">{{modal.item.name}}</h3>
+</div>
+
+<div class="modal-body">
+  <div class="row">
+    <div class="col-xs-3">
+      <img class="img-responsive center-block" ng-src="{{modal.item.image}}">
+    </div>
+    <div class="col-xs-6">
+      Sorry, you've already set up an account.
+    </div>
+  </div>
+</div>

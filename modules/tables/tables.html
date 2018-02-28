@@ -1,0 +1,57 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Tables</h1>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <!--Inline Checkboxes-->
+      <div class="controls-inline">
+        <pbds-checkbox label="DS Directive Checkbox" ng-model="tables.model.checkbox1"></pbds-checkbox>
+
+        <pbds-checkbox label="Check 2" ng-model="tables.model.checkbox2"></pbds-checkbox>
+
+      </div>
+
+      <!-- Inline Radio Buttons -->
+      <div class="controls-inline">
+        <pbds-radio tip-type="popover" ng-attr-label="Radio DS Directive 1" name="radio2" ng-model="tables.model.radio3" value="radio-3" ng-change="handler(val)"></pbds-radio>
+
+        <pbds-radio tip-type="popover" ng-attr-label="Radio DS Directive 2" name="radio2" ng-model="tables.model.radio4" value="radio-4" ng-change="handler(val)"></pbds-radio>
+
+        <pbds-radio tip-type="popover" ng-attr-label="Radio DS Directive 3" name="radio2" ng-model="tables.model.radio5" value="radio-5" ng-change="handler(val)">
+          <a href="" class="control-help" uib-popover="This is a popover example." popover-trigger="'click outsideClick'"><i class="nc-icon-mini ui-2_alert-circle text-info"></i></a>
+        </pbds-radio>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Recipient</th>
+            <th>Carrier</th>
+            <th>Shipping</th>
+            <th>Tracking</th>
+            <th>Status</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="row in tables.rowdata">
+            <td>{{row.date}}</td>
+            <td>{{row.recipient}}</td>
+            <td>{{row.carrier}}</td>
+            <td>{{row.shipping}}</td>
+            <td>{{row.tracking}}</td>
+            <td>{{row.status}}</td>
+            <td>{{row.amount}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
